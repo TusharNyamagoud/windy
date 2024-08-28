@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Tiny5&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap" rel="stylesheet">
+    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>SCADA APP</title>
+  </head>
+  <body>
+    <header>
+      <div class="primary-header">
+        <a href="#"><img src="Images/logo.jpeg" alt="Logo" id="logo"></a>
+        <p class="title"> Supervisory Control and Data Acquisition</p>
+      </div>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+          <p class="metricLabel">Total Power Generation</p>
+          <p class="metric">10 MW</p>
+        </div>
+
+        <div class="card">
+          <p class="metricLabel">Energy to the Grid</p>
+          <p class="metric">12 MW</p>
+        </div>
+
+        <div class="card">
+          <p class="metricLabel">Energy Stored</p>
+          <p class="metric">14 MW</p>
+        </div>
+
+        <div class="card">
+          <p class="metricLabel">Nacelle Angle_value</p>
+          <p class="metric">123 MW</p>
+        </div>
+
+        <div class="card graph"> 
+          <canvas id="Chart1" style="width:100%;max-width:700px;="></canvas>
+        </div>
+
+        <div class="card graph">
+          <canvas id="Chart2" style="width:100%;max-width:700px"></canvas>
+          
+        </div>
+
+        <div class="card">
+          <p class="metricLabel">PHASE A</p>
+          <p class="metric">2.6 MW</p>
+        </div>
+
+        <div class="card">
+          <p class="metricLabel">PHASE B</p>
+          <p class="metric">3.8 MW</p>
+        </div>
+
+        <div class="card">
+          <p class="metricLabel">TOTAL POWER</p>
+          <p class="metric">6.4 MW</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
